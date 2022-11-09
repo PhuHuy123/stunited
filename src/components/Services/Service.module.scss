@@ -72,17 +72,18 @@
             }
             .serviceSeemore{
                 text-align: center;
-                a{
-                font-size: 18px;
-                line-height: 22px; 
-                    p{
-                        padding-bottom: 20px;
-                        color: #33c1f5 ;
+                p{
+                    padding-bottom: 20px;
+                    color: #33c1f5 ;   
+                    a{
+                        font-size: 18px;
+                        line-height: 22px; 
                         &:hover{
                             color:green ;
                         }
                     }
                 }
+                
             }
         }
     }

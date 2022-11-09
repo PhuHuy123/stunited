@@ -43,9 +43,9 @@ export const Service = () => {
                   <p>{service.description}</p>
                 </div>
                 <div className={styles.serviceSeemore}>
-                  <a href="">
-                    <p>See More</p>
-                  </a>
+                  <p>
+                    <a href="">See More </a>
+                  </p>
                 </div>
               </div>
             ))}

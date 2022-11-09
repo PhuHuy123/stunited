@@ -12,11 +12,12 @@ html,
 body {
   font-size: 15px;
   color: #505050;
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
   vertical-align: baseline;
   line-height: 26px;
   font-weight: 400;
   overflow-x: hidden;
+  background-color: #f5f5f5;
 }
 
 h1,
@@ -31,7 +32,7 @@ h6 {
   text-align: inherit;
   margin: 0 0 26px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h1 {

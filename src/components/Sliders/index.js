@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import './Slider.scss'
+import "./Slider.scss";
 import { useEffect, useState } from "react";
 import { slidersApi } from "../../config/apiService";
 

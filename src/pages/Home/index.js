@@ -1,5 +1,11 @@
+import { JoinUS } from "../../components/JoinUs";
+
 function Home() {
-  return <></>;
+  return (
+    <>
+      <JoinUS />
+    </>
+  );
 }
 
 export default Home;

@@ -1,5 +1,7 @@
+import Partners from "../../components/clients-partners/clients-partners"
+
 function Home() {
-  return <></>;
+  return <><Partners /></>;
 }
 
 export default Home;

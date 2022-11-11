@@ -3,6 +3,7 @@ import styles from "./Footer.module.scss";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getApiMenu } from "../../config/apiService";
+import BackTopBtn from "../BackTopBtn";
 
 const Footer = () => {
   const [menu, setMenu] = useState([]);
@@ -43,6 +44,7 @@ const Footer = () => {
 
   return (
     <footer className={clsx(styles.footer_section)}>
+      <BackTopBtn />
       <div className={clsx(styles.footer)}>
         <div className={clsx(styles.footer_container)}>
           <div className={clsx(styles.footer_row)}>

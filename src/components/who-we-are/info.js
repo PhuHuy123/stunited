@@ -50,8 +50,8 @@ const InfoUs = () => {
           <h1>WE ARE ST UNITED</h1>
         </div>
         <Row>
-            {info.map((item) => (
-              <div className="infoDigital">
+            {info.map((item, index) => (
+              <div key={index} className="infoDigital">
                 <p>
                   <b>{item.title}</b>
                 </p>

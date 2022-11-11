@@ -48,7 +48,9 @@ const getStSoftwareApi = () => {
     "https://636df82b182793016f320e45.mockapi.io/devplus/stUnited"
   );
 }
-
+const getApiPanel = () => {
+  return axios.get("https://6369b58f28cd16bba7227e74.mockapi.io/united");
+}
 export {
   getApiMenu,
   storiesApi,
@@ -60,4 +62,5 @@ export {
   getJoinApi,
   getStSoftwareApi,
   getMeetOurteam,
+  getApiPanel,
 };

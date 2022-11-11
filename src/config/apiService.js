@@ -55,6 +55,9 @@ const getProjectApi = () => {
   );
 }
 
+const getApiPanel = () => {
+  return axios.get("https://6369b58f28cd16bba7227e74.mockapi.io/united");
+}
 export {
   getApiMenu,
   storiesApi,
@@ -67,4 +70,5 @@ export {
   getStSoftwareApi,
   getMeetOurteam,
   getProjectApi,
+  getApiPanel,
 };

@@ -18,18 +18,20 @@
 .carousel-indicators .active{
     background-color: white;
 }
-
+.carousel .slide .carousel-fade{
+    height: 100vh;
+}
 .carousel-inner {
-    height: 745px;
+    height: 100vh;
 }
 
 .carousel-item {
-    height: 100%;
+    height: 100vh;
 
 }
 
 .img-slide {
-    height: 745px !important;
+    height: 100vh !important;
     object-fit: cover;
 }
 
@@ -78,7 +80,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 745px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
 @keyframes LineWitdh {

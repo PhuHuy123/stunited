@@ -17,7 +17,6 @@ const Panel = () => {
       
     }
   };
-  console.log("ok", menu)
   return (
     <div className="mt-panel">
       <div className="container">

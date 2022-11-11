@@ -7,13 +7,13 @@ import { getApiMenu } from '../../config/apiService'
 function Header() {
   const [menu, setMenu] = useState([])
   const [checkMenu, setCheckMenu] = useState(true)
-  const [clickList, setClickList] = useState(false)
+  const [clickList, setClickList] = useState(true)
 
   useEffect(() => {
     arrayApiMenu();
   }, [])
   useEffect(() => {
-    setClickList(false);
+    setClickList(true);
   }, [checkMenu])
 
   const arrayApiMenu = async () => {
@@ -44,9 +44,30 @@ function Header() {
       return res
     }
   }
-
+  const checkChildResponsive = (data) => {
+    if (data && data.length > 0) {
+      let res = data.map(item => {
+        if (item.childMenu && item.childMenu.length > 0) {
+          return (
+            <li key={item.id} className={clickList ? clsx(styles.programme) : clsx(styles.our_programme, styles.us_close)}
+              onClick={() => setClickList(!clickList)}>
+              <Link to={checkMenu ? `/${item.path}` : ""}>{item.name}</Link>
+              <ul>{checkChildResponsive(item.childMenu)}</ul>
+            </li>
+          )
+        }
+        else {
+          return <li key={item.id}>
+            <Link to={`/${item.path}`} aria-current="page">{item.name}</Link>
+          </li>
+        }
+      }
+      )
+      return res
+    }
+  }
   return (
-    <header className={clsx(styles.header)} id="header">
+    <header className={clsx(styles.header)} id="header" onMouseLeave={()=>setCheckMenu(true)}>
       <div className={clsx(styles.content, 'container')}>
         <input type="checkbox" className={clsx(styles.click_menu)} hidden id="click-menu" />
         <div className={clsx(styles.y_middle, "row")}>
@@ -61,7 +82,7 @@ function Header() {
           <div className={checkMenu ? clsx(styles.text_end, styles.m_menu) : clsx(styles.text_end, styles.m_menu, styles.m_close)}>
             <nav className={clsx(styles.rs_menu_area, "rs-menu")}>
               <ul className={clsx(styles.nav_menu, "ul-main")}>
-                {checkChildMenu(menu)}
+                {checkMenu?checkChildMenu(menu):checkChildResponsive(menu)}
               </ul>
             </nav>
           </div>

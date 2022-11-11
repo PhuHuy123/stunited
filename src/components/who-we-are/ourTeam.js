@@ -22,8 +22,8 @@ const OurTeam = () => {
           <h1>Meet Our Team</h1>
         </div>
         <Row>
-          {users.map((item) => (
-            <div className="cart-info">
+          {users.map((item, index) => (
+            <div key={index} className="cart-info">
               <Stack gap={3}>
                 <div className="user_avatar">
                   <img className="" src={item.avatar} alt=""></img>

@@ -9,7 +9,7 @@
         text-align: center;
         min-height: 20%;
         p{
-            color:#999;
+            color:rgb(51, 51, 51);
             text-transform: inherit;
             text-align: inherit;
             font-size: 26px;
@@ -80,8 +80,9 @@
     }
     @include mobile(739px){
         .joinTop{
-            padding-left: 95px;
-            padding-right: 95px;
+            padding-left: 20px;
+            padding-top: 35px;
+            padding-right: 20px;
             p{
                 padding: 30px;
                 padding-right: 30px;
@@ -127,8 +128,9 @@
     }
     @include tablet(740px,1023px){
         .joinTop{
-            padding-left: 95px;
-            padding-right: 95px;
+            padding-left: 20px;
+            padding-top: 50px;
+            padding-right: 20px;
             p{
                 padding: 30px;
                 padding-right: 30px;

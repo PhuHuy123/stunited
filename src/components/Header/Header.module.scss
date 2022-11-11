@@ -6,6 +6,29 @@
   flex: unset;
   top: 0px;
   z-index: 200;
+  .programme>ul>li{
+    display: none !important;
+    // height: 0px;
+  }
+  .our_programme{
+    >ul>li>a{
+      display: block;
+    }
+  }
+  .programme{
+    >a::before {
+      padding-right: 22px;
+      float: right;
+      font-family: "FontAwesome";
+      content: "\f0da" !important;
+    }
+  }
+  .us_close>ul>li{
+    background-color: #30C7FF;
+    a{
+        color: #ffffff !important;
+    }
+  }
   .content {
     text-align: center;
     height: 100%;
@@ -180,6 +203,7 @@
 
           .sub_menu {
             width: 100% !important;
+            list-style-type: none !important;
           }
 
           .nav_menu {
@@ -200,8 +224,11 @@
               &:hover {
                 background-color: rgba(0, 174, 239, 1);
               }
+              li>a{
 
-              a {
+                color: #ffffff !important;
+              }
+              >a {
                 color: #004274 !important;
                 padding-left: 23px !important;
               }

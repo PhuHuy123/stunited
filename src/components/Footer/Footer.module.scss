@@ -244,11 +244,14 @@
   }
 }
 @media (max-width: 767px) {
-  .footer_container {
-    width: 480px !important;
-  }
-  .footer_bottom {
-    text-align: center;
+  .footer {
+    padding-top: 45px !important;
+    .footer_container {
+      width: 480px !important;
+    }
+    .footer_bottom {
+      text-align: center;
+    }
   }
 }
 @media (max-width: 366px) {

@@ -18,8 +18,8 @@ const StSoftware = () => {
     return (
       <div className={clsx(styles["St-software"], "container")}>
         <div className={clsx("row", styles["st-inner"])}>
-          {data.map((item) => (
-            <div className={clsx(styles["item"], "col-md-4 col-sm-12")}>
+          {data.map((item, index) => (
+            <div key={index} className={clsx(styles["item"], "col-md-4 col-sm-12")}>
               <div className={clsx(styles["item-inner"], "row")}>
                 <div className={clsx(styles["icon"], "col-md-3 col-sm-3")}>
                   <i className={item.icon}></i>

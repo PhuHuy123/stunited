@@ -6,7 +6,6 @@ import { getBannersApi } from '../../config/apiService';
 const Banner = () => {
   const [data, setData] = useState([]);
   const href = window.location.pathname;
-  console.log(href);
   useEffect(() => {
     fetchData();
   }, [href]);

@@ -60,11 +60,11 @@ const Partners = () => {
       <div className="sliders">
         <h2 className="title">Trusted by the Clients & Partners</h2>
         <Slider {...settings}>
-          {partners.map((item) => (
-            <div className="cart">
+          {partners.map((item, index) => (
+            <div key={index} className="cart">
               <a href={item.linkPartners}>
                 <img
-                  class="logoPartners"
+                  className="logoPartners"
                   src={item.logoPartners}
                   alt={item.namePartners}
                 ></img>

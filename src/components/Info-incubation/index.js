@@ -37,7 +37,7 @@ const Panel = () => {
             <div className="module-item col-4" key={item.id}>
             <div className="service-block">
               <div className="block-icon">
-                <img src={item.image}/>
+                <img src={item.image} alt={item.id}/>
               </div>
               <div className="block-content">
                 <h3>{item.name}</h3>

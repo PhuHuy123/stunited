@@ -9,7 +9,7 @@ const Panel = () => {
   const arrayApiPanel = async () => {
     let res = await getApiPanel();
     if (res && res.data && res.data.length > 0) {
-      res.data.map(item=>{
+      res.data.map(item => {
         if(item.path==="st-digital"){
           setMenu(item.child);
         }
@@ -47,7 +47,7 @@ const Panel = () => {
             <div className="module-item col-4" key={item.id}>
             <div className="service-block">
               <div className="block-icon">
-                <img src={item.image}/>
+                <img src={item.image} alt={item.id}/>
               </div>
               <div className="block-content">
                 <h3>{item.name}</h3>

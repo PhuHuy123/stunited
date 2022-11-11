@@ -16,8 +16,16 @@ const getApiMenu = () => {
   );
 };
 
+const getPartners = () => {
+  return axios.get(
+    "https://636c5b977f47ef51e146e189.mockapi.io/clients-partners"
+  );
+};
+
+
 export {
   getApiMenu,
   storiesApi,
   slidersApi,
+  getPartners,
 };

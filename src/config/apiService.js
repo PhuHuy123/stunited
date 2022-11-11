@@ -39,6 +39,9 @@ const getServices = () => {
 const getJoinApi = () => {
   return axios.get("https://6369c6d315219b84961e87c1.mockapi.io/api/jointeams");
 };
+const getMeetOurteam = () => {
+  return axios.get("https://6369c6d315219b84961e87c1.mockapi.io/api/digitals");
+};
 
 const getStSoftwareApi = () => {
   return axios.get(
@@ -56,4 +59,5 @@ export {
   getServices,
   getJoinApi,
   getStSoftwareApi,
+  getMeetOurteam,
 };

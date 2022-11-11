@@ -49,6 +49,12 @@ const getStSoftwareApi = () => {
   );
 }
 
+const getProjectApi = () => {
+  return axios.get(
+    "https://636df82b182793016f320e45.mockapi.io/devplus/project"
+  );
+}
+
 export {
   getApiMenu,
   storiesApi,
@@ -60,4 +66,5 @@ export {
   getJoinApi,
   getStSoftwareApi,
   getMeetOurteam,
+  getProjectApi,
 };

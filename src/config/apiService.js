@@ -58,6 +58,12 @@ const getInfoTeam = () => {
   return axios.get("https://636c5b977f47ef51e146e189.mockapi.io/infoteam");
 };
 
+const getProjectApi = () => {
+  return axios.get(
+    "https://636df82b182793016f320e45.mockapi.io/devplus/project"
+  );
+}
+
 export {
   getApiMenu,
   storiesApi,
@@ -72,4 +78,5 @@ export {
   getApiPanel,
   getUsers,
   getInfoTeam,
+  getProjectApi,
 };

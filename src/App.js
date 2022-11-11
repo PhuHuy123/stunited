@@ -7,6 +7,7 @@ import StSoftware from "./pages/StSoftwate";
 import { Routes, Route } from "react-router-dom";
 import Digital from "./pages/Digital";
 import WhoWeAre from "./pages/WhoWeAre";
+import StIncubation from "./pages/StIncubation";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/st-software" element={<StSoftware />} />
         <Route path="/st-digital" element={<Digital />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
+        <Route path="/st-incubation" element={<StIncubation />} />
       </Routes>
     </div>
   );

@@ -8,19 +8,76 @@ import { Routes, Route } from "react-router-dom";
 import Digital from "./pages/Digital";
 import WhoWeAre from "./pages/WhoWeAre";
 import StIncubation from "./pages/StIncubation";
+import Title from "./components/Pages/title";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/join-us" element={<JoinUs />} />
-        <Route path="/lets-talk" element={<Talk />} />
-        <Route path="/st-software" element={<StSoftware />} />
-        <Route path="/st-digital" element={<Digital />} />
-        <Route path="/who-we-are" element={<WhoWeAre />} />
-        <Route path="/st-incubation" element={<StIncubation />} />
+        <Route
+          path="/"
+          element={
+            <Title title="ST United - United to grow up">
+              <Home />
+            </Title>
+          }
+        />
+        <Route
+          path="/portfolio"
+          element={
+            <Title title="Portfolio - ST United">
+              <Portfolio />
+            </Title>
+          }
+        />
+        <Route
+          path="/join-us"
+          element={
+            <Title title="Join Us - ST United">
+              <JoinUs />
+            </Title>
+          }
+        />
+        <Route
+          path="/lets-talk"
+          element={
+            <Title title="Let's talk - ST United">
+              <Talk />
+            </Title>
+          }
+        />
+        <Route
+          path="/st-software"
+          element={
+            <Title title="ST Software - ST United">
+              <StSoftware />
+            </Title>
+          }
+        />
+        <Route
+          path="/st-digital"
+          element={
+            <Title title="ST Digital - ST United">
+              <Digital />
+            </Title>
+          }
+        />
+        <Route
+          path="/who-we-are"
+          element={
+            <Title title="Who We Are - ST United">
+              <WhoWeAre />
+            </Title>
+          }
+        />
+        <Route
+          path="/st-incubation"
+          element={
+            <Title title="ST Incubation - ST United">
+              <StIncubation />
+            </Title>
+          }
+        />
       </Routes>
     </div>
   );

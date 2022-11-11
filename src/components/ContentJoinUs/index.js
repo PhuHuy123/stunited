@@ -2,6 +2,7 @@ import clsx from "clsx";
 import styles from "./ContentJoin.module.scss";
 import { useEffect, useState } from "react";
 import { getJoinApi } from "../../config/apiService";
+import { Link } from "react-router-dom";
 
 export const JoinUS = () => {
   const [joinus, setJoinUs] = useState([]);
@@ -30,7 +31,7 @@ export const JoinUS = () => {
             {joinus.map((join) => (
               <div className={clsx(styles.joinMain, "col-md-3")} key={join.id}>
                 <div className={styles.joinImage}>
-                  <img src={join.image} />
+                  <img src={join.image} alt={join.id}/>
                 </div>
                 <div className={styles.joinTitle}>
                   <h2>{join.title}</h2>
@@ -40,7 +41,7 @@ export const JoinUS = () => {
                 </div>
                 <div className={styles.joinSeemore}>
                   <p>
-                    <a href="">Interesting? </a>
+                    <Link to="">Interesting? </Link>
                   </p>
                 </div>
               </div>

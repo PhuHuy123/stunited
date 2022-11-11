@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { getServices } from "../../config/apiService";
 import { useState, useEffect } from "react";
 import styles from "./Service.module.scss";
+import { Link } from "react-router-dom";
 
 export const Service = () => {
   const [services, setServices] = useState([]);
@@ -34,7 +35,7 @@ export const Service = () => {
                 key={service.id}
               >
                 <div className={styles.serviceImage}>
-                  <img src={service.image} />
+                  <img src={service.image} alt={service.id}/>
                 </div>
                 <div className={styles.serviceTitle}>
                   <h2>{service.title}</h2>
@@ -44,7 +45,7 @@ export const Service = () => {
                 </div>
                 <div className={styles.serviceSeemore}>
                   <p>
-                    <a href="">See More </a>
+                    <Link to="">See More </Link>
                   </p>
                 </div>
               </div>

@@ -27,7 +27,7 @@ export const MeetOurTeamUS = () => {
             >
               <div className={clsx(styles.meetContent)}>
                 <div className={clsx(styles.imagefull)}>
-                  <img src={meetTeam.image} />
+                  <img src={ meetTeam.image } alt={ meetTeam.id } />
                 </div>
                 <div className={clsx(styles.meetName)}>
                   <h2>{meetTeam.name}</h2>

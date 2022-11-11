@@ -22,10 +22,23 @@ const getPartners = () => {
   );
 };
 
+const getPortfolioApi = () => {
+  return axios.get(
+    "https://6369c37115219b84961e2a6c.mockapi.io/api/devplus/portfolio"
+  );
+}
+
+const getBannersApi = () => {
+  return axios.get(
+    "https://6369c37115219b84961e2a6c.mockapi.io/api/devplus/banners"
+  );
+}
 
 export {
   getApiMenu,
   storiesApi,
   slidersApi,
   getPartners,
+  getPortfolioApi,
+  getBannersApi,
 };

@@ -2,6 +2,7 @@ import clsx from "clsx";
 import styles from './StSoftware.module.scss';
 import { useState, useEffect } from "react";
 import { getStSoftwareApi } from "../../config/apiService";
+import { Link } from "react-router-dom";
 const StSoftware = () => {
     const [data, setData] = useState( [] );
     useEffect( () => {
@@ -26,7 +27,7 @@ const StSoftware = () => {
                 <div className={clsx(styles["content"], "col-md-9 col-sm-9")}>
                     <h3>{ item.title }</h3>
                     <p>{ item.text }</p>
-                    <a href="..">See More</a>
+                    <Link to="">See More</Link>
                 </div>
               </div>
             </div>

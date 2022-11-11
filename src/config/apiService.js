@@ -33,6 +33,9 @@ const getBannersApi = () => {
     "https://6369c37115219b84961e2a6c.mockapi.io/api/devplus/banners"
   );
 }
+const getServices = () => {
+  return axios.get("https://6369c6d315219b84961e87c1.mockapi.io/api/services");
+}
 
 export {
   getApiMenu,
@@ -41,4 +44,5 @@ export {
   getPartners,
   getPortfolioApi,
   getBannersApi,
+  getServices,
 };
